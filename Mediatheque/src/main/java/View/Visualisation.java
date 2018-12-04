@@ -28,10 +28,6 @@ public class Visualisation extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        admin = new javax.swing.JPanel();
-        insertion = new javax.swing.JButton();
-        suppression = new javax.swing.JButton();
-        analyse = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jSeparator3 = new javax.swing.JSeparator();
@@ -57,26 +53,12 @@ public class Visualisation extends javax.swing.JDialog {
         jComboBox3 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         liste = new javax.swing.JList<>();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-
-        admin.setLayout(new java.awt.GridLayout());
-
-        insertion.setText("Insertion");
-        insertion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                insertionActionPerformed(evt);
-            }
-        });
-        admin.add(insertion);
-
-        suppression.setText("Suppression");
-        admin.add(suppression);
-
-        analyse.setText("Analyse");
-        admin.add(analyse);
-
-        getContentPane().add(admin, java.awt.BorderLayout.PAGE_START);
 
         jPanel6.setLayout(new java.awt.BorderLayout());
 
@@ -152,6 +134,17 @@ public class Visualisation extends javax.swing.JDialog {
 
         getContentPane().add(jPanel6, java.awt.BorderLayout.CENTER);
 
+        jMenu1.setText("Insertion");
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Suppression");
+        jMenuBar1.add(jMenu2);
+
+        jMenu3.setText("Analyse");
+        jMenuBar1.add(jMenu3);
+
+        setJMenuBar(jMenuBar1);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -159,21 +152,18 @@ public class Visualisation extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_genreActionPerformed
 
-    private void insertionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_insertionActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel admin;
-    private javax.swing.JButton analyse;
     private javax.swing.JComboBox<String> genre;
-    private javax.swing.JButton insertion;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -192,6 +182,5 @@ public class Visualisation extends javax.swing.JDialog {
     private javax.swing.JButton recherche_complete;
     private javax.swing.JTextField recherche_g_champ;
     private javax.swing.JButton recherche_globale;
-    private javax.swing.JButton suppression;
     // End of variables declaration//GEN-END:variables
 }
