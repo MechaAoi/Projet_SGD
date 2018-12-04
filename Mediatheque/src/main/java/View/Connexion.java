@@ -27,22 +27,69 @@ public class Connexion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        pseudo = new javax.swing.JTextField();
+        pseudo_error = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        password = new javax.swing.JTextField();
+        password_error = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        connexion = new javax.swing.JButton();
+        inscription = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jPanel1.setLayout(new java.awt.GridLayout(0, 1));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Nom d'utilisateur");
+        jPanel1.add(jLabel1);
+
+        pseudo.setToolTipText("");
+        pseudo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pseudoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(pseudo);
+        jPanel1.add(pseudo_error);
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Mot de passe");
+        jPanel1.add(jLabel4);
+        jPanel1.add(password);
+        jPanel1.add(password_error);
+
+        jPanel2.setLayout(new java.awt.GridLayout());
+
+        connexion.setText("Connexion");
+        jPanel2.add(connexion);
+
+        inscription.setText("Inscription");
+        jPanel2.add(inscription);
+
+        jPanel1.add(jPanel2);
+
+        getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void pseudoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pseudoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pseudoActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton connexion;
+    private javax.swing.JButton inscription;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JTextField password;
+    private javax.swing.JLabel password_error;
+    private javax.swing.JTextField pseudo;
+    private javax.swing.JLabel pseudo_error;
     // End of variables declaration//GEN-END:variables
 }
